@@ -14,7 +14,7 @@ function Header () {
             auth.signOut();
         }
     }
-
+    
     return (
         <div className="header">
           <Link to="/">
@@ -33,10 +33,12 @@ function Header () {
                 <span className="header_optionOne">Hello {user? user.email:'Guest'} </span>
                 <span className="header_optionTwo">{user? 'Sign Out': 'Sign In'}</span> 
             </div></Link>
+            <Link to="/orders">
             <div className="header_option">
                 <span className="header_optionOne">Returns</span>
                 <span className="header_optionTwo">& Order</span> 
             </div>
+            </Link>
             <div className="header_option">
                 <span className="header_optionOne">Your</span>
                 <span className="header_optionTwo">Prime</span> 
@@ -46,11 +48,8 @@ function Header () {
             <ShoppingCartIcon fontSize="large" className="header_optionCart" />
             <span className="header_optionTwo header_basketCount">{basket?.length}</span>
             </div> </Link>
-            
-            
+        
         </div>
-            
-
         
         </div>
     )

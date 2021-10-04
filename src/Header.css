@@ -1,5 +1,5 @@
 .header{
-    height:60px;
+    height:65px;
     display:flex;
     align-items:center;
     background-color: #131921;
@@ -8,29 +8,36 @@
     z-index: 100;
 }
 .header_logo{
-    width:100Px;
+    width:110Px;
     object-fit: contain;
-    margin: 0 20px; 
+    margin: 0 25px; 
     margin-top:16px;
 }
 .header_search{
     display:flex;
     flex:1;
     align-items:center;
-    border-radius:24px;
+    border-radius:24;
+   
 
 }
 .header_searchInput{
     height: 12px;
-    padding:10px;
+    padding:15px;
     border:none;
+    border-radius:4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     width:100%;
 }
 
 .header_searchIcon{
-    padding: 5px;
+    padding: 10px;
     height:22px !important;
-    background-color: #fcbb6c
+    background-color: #fcbb6c;
+    border-radius:4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .header_nav{
     display:flex;

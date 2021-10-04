@@ -19,18 +19,18 @@ function Login() {
        // some fancy firebase login shittttt....
    }
 
-   const register= e => {
-    auth
-    .createUserWithEmailAndPassword(email, password)
-    .then((auth) => {
-       if(auth) {
-           history.push('/')
-       }
-    })
-    .catch(error => alert(error.message))
+//    const register= e => {
+//     auth
+//     .createUserWithEmailAndPassword(email, password)
+//     .then((auth) => {
+//        if(auth) {
+//            history.push('/')
+//        }
+//     })
+//     .catch(error => alert(error.message))
 
-       // some fancy firebase register shitttt
-   }
+//        // some fancy firebase register shitttt
+//    }
 
     return (
         <div className="login">
@@ -52,7 +52,7 @@ function Login() {
 
               <p>  By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. </p>
 
-            <button onClick={register} className="login_registerButton">Create your Amazon Account</button>
+            <button onClick={e => history.push('/register')} className="login_registerButton">Create your Amazon Account</button>
           </div>
         </div>
     )
